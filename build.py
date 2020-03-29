@@ -39,7 +39,7 @@ def gen_sitemap():
 gen_sitemap()
 templateLoader = jinja2.FileSystemLoader(searchpath="./")
 templateEnv = jinja2.Environment(loader=templateLoader)
-data=json.load(open("/assets/data/data.json"))
+data=json.load(open("assets/data/data.json"))
 TEMPLATE_FILE = "index.html"
 template = templateEnv.get_template(TEMPLATE_FILE)
 print(template.render(data=data),file=open("index.html","w"))
