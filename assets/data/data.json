@@ -1,0 +1,68 @@
+[{
+    "id": "1",
+    "Name": "Dr. Parvez Ahmad",
+    "Speciality": "",
+    "Hospital": "GB Panth Hospital",
+    "Whatsapp": ["+919419009726","+919419009726"]
+
+}, {
+    "id": "2",
+    "Name": "Dr. Showkat (Asstt. Prof)",
+    "Speciality": "",
+    "Hospital": "GMC Srinagar",
+    "Mobile": ["+917006209304"]
+}, {
+    "id": "3",
+    "Name": "Dr Tajamul",
+    "Speciality": "",
+    "Hospital": "SKIIMS",
+    "Mobile": ["+918494048032"]
+}, {
+    "id": "4",
+    "Name": "Dr. Ishaq Malik",
+    "Speciality": "",
+    "Hospital": "GB Panth Hospital",
+    "Mobile": ["+919906630263"]
+}, {
+    "id": "5",
+    "Name": "Dr. Irshad",
+    "Speciality": "",
+    "Hospital": "SKIIMS",
+    "Mobile": ["+919797970599"]
+}, {
+    "id": "6",
+    "Name": "Dr. Irfan",
+    "Speciality": "",
+    "Hospital": "SKIIMS",
+    "Mobile": ["+918899233344"]
+}, {
+    "id": "7",
+    "Name": "Dr. Mudasir Ahad",
+    "Speciality": "",
+    "Hospital": "SKIIMS",
+    "Mobile": ["+919541290288"]
+}, {
+    "id": "8",
+    "Name": "Dr. Mudasir Nazir",
+    "Speciality": "",
+    "Hospital": "SKIIMS",
+    "Mobile": ["+919797126015"]
+}, {
+    "id": "9",
+    "Name": "Dr. Yasir",
+    "Speciality": "",
+    "Hospital": "SKIIMS",
+    "Mobile": ["+919797069400"]
+}, {
+    "id": "10",
+    "Name": "Dr. Tafazul",
+    "Speciality": "",
+    "Hospital": "Distt. Hospital Bandipora",
+    "Mobile": ["+919697347942"]
+}, {
+    "id": "11",
+    "Name": "Dr. Jasmine Shafi",
+    "Speciality": "",
+    "Hospital": "Sub Distt Hospital Pampore",
+    "Mobile": ["+919622411298"]
+}]

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo App</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/brands.min.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/css/solid.min.css">
+    <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/jquery-3.4.1.min.js"></script> -->
+    <link rel="icon" href="/assets/favicon/icon-72x72.png" type="image/png" sizes="72x72">
+    <link rel="icon" href="/assets/favicon/icon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="/assets/favicon/icon-128x128.png" type="image/png" sizes="128x128">
+    <link rel="icon" href="/assets/favicon/icon-144x144.png" type="image/png" sizes="144x144">
+    <link rel="icon" href="/assets/favicon/icon-152x152.png" type="image/png" sizes="152x152">
+    <link rel="icon" href="/assets/favicon/icon-192x192.png" type="image/png" sizes="192x192">
+    <link rel="icon" href="/assets/favicon/icon-384x384.png" type="image/png" sizes="384x384">
+    <link rel="icon" href="/assets/favicon/icon-512x512.png" type="image/png" sizes="512x512">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Demo App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+        </div>
+    </nav>
+    <div class="container-lg" style="padding-top: 32px">
+        <h1 class="text-center">Doctors</h1>
+        <div id="main-container" class="row row-cols-lg-3 row-cols-sm-1 row-cols-md-2 justify-content-around">
+            {% for d in data %}
+            <div class="col" style="margin-bottom: 10px">
+                <div class="card" style="width: 18rem; margin: auto; display: block;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ d["Name"] }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ d["Hospital"] }}</h6>
+                        {% if 'Mobile' in d %}
+                            {% for n in d['Mobile'] %}
+                                <a style="margin: 2px" href="tel:{{ n }}" class="btn btn-info"><i class="fas fa-phone-volume"></i>{{ n }}</a>
+                            {% endfor %}
+                        {% endif %}
+                        {% if 'Whatsapp' in d %}
+                            {% for n in d['Whatsapp'] %}
+                            <a style="margin: 2px" href="https://wa.me/{{ n }}" class="btn btn-success"><i class="fab fa-whatsapp"></i>{{ n }}</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
