@@ -1,0 +1,10 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "org.hackesta.demoapp1",
+      "sha256_cert_fingerprints": [
+        "CF:EE:23:09:67:C3:ED:BD:4D:9A:D0:DF:D6:F9:1B:A2:DC:CD:F7:06:73:13:7C:1B:D5:F3:46:D2:E0:85:05:7F"
+      ]
+    }
+  }]
