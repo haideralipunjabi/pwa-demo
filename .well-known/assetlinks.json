@@ -1,10 +1,10 @@
 [{
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "org.hackesta.demoapp1",
-      "sha256_cert_fingerprints": [
-        "CF:EE:23:09:67:C3:ED:BD:4D:9A:D0:DF:D6:F9:1B:A2:DC:CD:F7:06:73:13:7C:1B:D5:F3:46:D2:E0:85:05:7F"
-      ]
-    }
-  }]
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "org.hackesta.demoapp1",
+    "sha256_cert_fingerprints": [
+      "61:B5:8C:F5:E0:A3:EB:30:4E:D3:A2:EF:4D:FC:86:B0:24:DC:B0:A4:61:D8:DE:8D:8F:89:E3:1D:2F:C7:66:85"
+    ]
+  }
+}]
