@@ -33,8 +33,11 @@ self.addEventListener("install", installEvent => {
 
 self.addEventListener("fetch", fetchEvent => {
     fetchEvent.respondWith(
-        caches.match(fetchEvent.request).then(res => {
-            return res || fetch(fetchEvent.request)
+        caches.open(cacheName).then(cache=>{
+            return fetch(fetchEvent.request).then(response=>{
+                cache.put(fetchEvent.request, response.clone())
+                return response;
+            })
         })
     )
 })
