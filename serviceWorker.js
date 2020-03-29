@@ -1,4 +1,4 @@
-const cacheName = "demo-site-v1"
+const cacheName = "demo-site-v2"
 const assets = [
     "/",
     "/index.html",
